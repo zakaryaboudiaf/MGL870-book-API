@@ -30,7 +30,7 @@ tasks.withType(JavaCompile) {
 
 application {
     mainModule = 'com.example.mgl870springbootapi'
-    mainClass = 'com.example.mgl870springbootapi.HelloApplication'
+    mainClass = 'com.example.mgl870springbootapi.BookApplication'
 }
 
 javafx {

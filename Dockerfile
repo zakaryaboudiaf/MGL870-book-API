@@ -1,4 +1,4 @@
 FROM openjdk:17
-EXPOSE: 8070
-ADD target/MGL-870-Book-API.jar MGL-870-Book-API.jar
-ENTRYPOINT ["java", "-jar", "/MGL-870-Book-API.jar"]
+ARG JAR_FILE
+COPY ${JAR_FILE} app.jar
+ENTRYPOINT ["java", "-jar", "/app.jar"]
